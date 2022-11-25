@@ -1,0 +1,89 @@
+/* Customize CSS native */
+
+.notDisplayMobileTablet {
+  display: inline-block;
+}
+/*.notDisplayMobileTa {
+}*/
+
+/* Start navBar */
+nav .container-fluid {
+  padding: 4rem 0 4.5rem 0.1rem;
+}
+
+li:nth-child(1) a:nth-child(1) {
+  color: #0082f3;
+  font-weight: 700;
+}
+li:nth-child(2) a:nth-child(1) {
+  font-weight: 700;
+}
+li:nth-child(3) a:nth-child(1) {
+  font-weight: 700;
+}
+
+li:nth-child(1) a:nth-child(1):hover {
+  color: #072ac8;
+}
+li:nth-child(2) a:nth-child(1):hover {
+  color: #072ac8;
+}
+li:nth-child(3) a:nth-child(1):hover {
+  color: #072ac8;
+}
+
+a.notDisplayMobileTablet {
+  padding: 12px 30px;
+  font-size: 17px;
+  border: 0;
+  background-color: #072ac8;
+  color: white;
+}
+
+/* pruebas */
+.hero {
+  display: flex;
+}
+
+.hero article:nth-child(1) {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  margin: 1.5rem;
+}
+
+.hero h4 {
+  font-size: 20px;
+}
+
+.hero article:nth-child(2) > img:nth-child(1) {
+  left: -23%;
+  top: -0.1%;
+}
+.hero article:nth-child(2) > img:nth-child(2) {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero article:nth-child(2) > img:nth-child(3) {
+  left: 40%;
+  bottom: -10%;
+}
+/* Clientes */
+.clientes {
+  flex-direction: row;
+  margin-right: 3rem;
+  align-items: center;
+  margin-top: 0px;
+}
+
+/* projects */
+.projects > div {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.navbar {
+  padding: 0 20%;
+}

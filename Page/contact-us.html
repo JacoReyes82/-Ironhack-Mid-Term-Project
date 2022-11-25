@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle - Contact-us</title>
+    <!-- CSS Bootstrap and Customize CSS native-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS media query on a link element -->
+    <!-- mobile or común-->
+    <link rel="stylesheet" href="../Style/styleM.css" />
+    <!-- tablet, pc... -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="../Style/styleL.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 992px)"
+      href="../Style/styleXL.css"
+    />
+    <!-- Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Simulate a smartphone -->
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img src="../Style/img/logos/circle.svg" alt="logo Circle" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="toogler-icon"></div>
+          <div class="toogler-icon"></div>
+          <div class="toogler-icon"></div>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+        <a href="./contact-us.html" class="notDisplayMobileTablet"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+    <main class="mainContactUs">
+      <h1>Contact Us</h1>
+      <form id="formContact">
+        <label for="fullName">Full name </label>
+        <input
+          id="fullName"
+          type="text"
+          placeholder="Enter your full name"
+          required
+        />
+        <div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your mail" />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              type="tel"
+              pattern="[0-9]{9}"
+              placeholder="Enter your phone"
+            />
+          </div>
+        </div>
+        <label for="message">Message</label>
+        <textarea
+          id="mess"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+        <input type="submit" />
+      </form>
+    </main>
+    <footer>
+      <div>
+        <img src="../Style/img/logos/circle.svg" alt="logo Circle" />
+        <h4>2972 Westheimer Rd. Santa Ana, Illinois 85486</h4>
+      </div>
+      <nav class="footer-links">
+        <a href="#" class="footer-link">Team</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">About Us</a>
+        <a href="#" class="footer-link">Press</a>
+        <a href="#" class="footer-link">Projects</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="../JS/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

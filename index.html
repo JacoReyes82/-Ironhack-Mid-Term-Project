@@ -1,189 +1,272 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle - HomePage</title>
+    <!-- CSS Bootstrap and Customize CSS native-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- CSS media query on a link element -->
+    <!-- mobile or común-->
+    <link rel="stylesheet" href="../Style/styleM.css" />
+    <!-- tablet, pc... -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="../Style/styleL.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 992px)"
+      href="../Style/styleXL.css"
+    />
 
-<head>
-  <title>Circle Agency</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-  <!-- Comienza Navbar-->
-  <div class="d-flex justify-content-around">
+    <!-- Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Simulate a smartphone -->
+    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg">
-        <div class="container navbar">
-          <a class="navbar-brand " href="#">Circle</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active mx-2" aria-current="page" href="#">Home</a>
-              <a class="nav-link mx-2" href="#">Projects</a>
-              <a class="nav-link mx-2" href="#">Services</a>
-            </div>            
-          </div>
-          <a href="#" class="nav-button px-4 py-3">Contact Us</a>
+      <div class="container-fluid">
+        <img src="../Style/img/logos/circle.svg" alt="logo Circle" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="toogler-icon"></div>
+          <div class="toogler-icon"></div>
+          <div class="toogler-icon"></div>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarResponsive"
+        >
+          <ul class="navbar-nav py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+          </ul>
         </div>
+        <a href="./Page/contact-us.html" class="notDisplayMobileTablet"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+
+    <section class="hero">
+      <article>
+        <h1>Empower Your Business With Stunning Design!</h1>
+        <h4>
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites and mobile apps.
+        </h4>
+        <div class="buttons">
+          <button>Get in touch</button><button>See our work</button>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./Style/img/hero-section/card-1.png"
+          class="notDisplayMobile"
+          alt=""
+        />
+        <img
+          src="./Style/img/hero-section/hero-image.png"
+          alt="cliente feliz"
+        />
+        <img
+          src="./Style/img/hero-section/card-2.png"
+          class="notDisplayMobile"
+          alt=""
+        />
+      </article>
+    </section>
+    <section class="clientes">
+      <article class="cliente">
+        <img src="../Style/img/logos/airbnb-logo.svg" alt="logo Airbnb" />
+        <img src="../Style/img/logos/google-logo.svg" alt="logo Google" />
+      </article>
+      <article class="cliente">
+        <img
+          src="../Style/img/logos/microsoft-logo.svg"
+          alt="logo microsoft-logo"
+        />
+        <img src="../Style/img/logos/fedex-logo.svg" alt="logo Fedex" />
+      </article>
+      <article class="notDisplayMobileTablet">
+        <img src="../Style/img/logos/amazon-logo.svg" alt="logo Amazon" />
+      </article>
+    </section>
+    <section class="projects">
+      <h2>Recent Projects</h2>
+      <div>
+        <article>
+          <img src="./Style/img/projects-section/1.jpg" alt="" />
+          <div>
+            <h3>Simplify</h3>
+            <h5>UI Design & App Development</h5>
+            <a
+              href="./index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Learn More</a
+            >
+          </div>
+        </article>
+        <article>
+          <img src="./Style/img/projects-section/2.jpg" alt="" />
+          <div>
+            <h3>Dashcoin</h3>
+            <h5>Web Development</h5>
+            <a
+              href="./index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Learn More</a
+            >
+          </div>
+        </article>
+        <article>
+          <img src="./Style/img/projects-section/3.jpg" alt="" />
+          <div>
+            <h3>Vectorify</h3>
+            <h5>User Experience Design</h5>
+            <a
+              href="./index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Learn More</a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="testimonial">
+      <h2>Hear What Our Clients Have to Say</h2>
+      <h3>
+        "Circle helped us through every stage of our startup. We really enjoyed
+        working with you."
+      </h3>
+      <article>
+        <div class="perfil"></div>
+        <div>
+          <p class="perfilNombre">Kristin Watson</p>
+          <p class="perfilEmpresa">Bookin.com</p>
+        </div>
+      </article>
+      <img
+        src="./Style/img/testimonial-section/memoji-1.png"
+        alt=""
+        class="notDisplayMobile"
+      />
+      <img
+        src="./Style/img/testimonial-section/memoji-2.png"
+        alt=""
+        class="notDisplayMobile"
+      />
+      <img
+        src="./Style/img/testimonial-section/memoji-3.png"
+        alt=""
+        class="notDisplayMobile"
+      />
+      <img
+        src="./Style/img/testimonial-section/memoji-4.png"
+        alt=""
+        class="notDisplayMobile"
+      />
+    </section>
+
+    <section class="projects services">
+      <h2>Our Services</h2>
+      <div>
+        <article>
+          <div>
+            <div class="logo logo1"></div>
+            <h3>User Interface Design</h3>
+            <h5>
+              Circle provides you with a stunning user interface design that is
+              accessible to everyone.
+            </h5>
+            <a href="#">Learn More</a>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div class="logo logo2"></div>
+            <h3>User Experience Design</h3>
+            <h5>
+              Circle always focuses on delivering the best user experience to
+              your customers.
+            </h5>
+            <a href="#" rel="noopener noreferrer">Learn More</a>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div class="logo logo3"></div>
+            <h3>Application Development</h3>
+            <h5>
+              We develop high-quality mobile and web applications using the
+              latest technology stack.
+            </h5>
+            <a href="#" rel="noopener noreferrer">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <h2>Do you have any questions?</h2>
+      <h4>Let us help you!</h4>
+      <form id="contactForm" action="submit" method="post">
+        <input type="email" id="mail" placeholder="Enter your mail" />
+        <button type="submit">Suscribe</button>
+      </form>
+    </section>
+    <footer>
+      <div>
+        <img src="../Style/img/logos/circle.svg" alt="logo Circle" />
+        <h4>2972 Westheimer Rd. Santa Ana, Illinois 85486</h4>
+      </div>
+      <nav class="footer-links">
+        <a href="#" class="footer-link">Team</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">About Us</a>
+        <a href="#" class="footer-link">Press</a>
+        <a href="#" class="footer-link">Projects</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
       </nav>
-    </div>
-    <!-- Finaliza Navbar-->
-    <!-- Comienza hero-section-->
-    <div class="container hero-section">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Empower Your Business With Stunning Design!</h1>
-          <div class="text-center text-hero">Circle is a digital design and development studio. We <br> design and develop astonishing websites and mobile apps.</div>
-          <a href="#" class="hero-button px-4 py-3">Get in touch</a>
-          <a href="#" class="hero-text-button ml-5">See our work</a>
-         
-            <img src="./project-assets/hero-section/hero-image.png" alt="" class="img-fluid mx-3">
+    </footer>
 
-        </div>
-      </div>
-    </div>
-    <!-- Finaliza hero-section-->
-     <!-- Comienza hero-section-img-->
-     <div class="container-fluid hero-img  mt-5">
-      <div class="row">
-        <div class="col-6">
-          <img src="./project-assets/logos/airbnb-logo.svg" alt="">
-        </div>
-        <div class="col-6">
-          <img src="./project-assets/logos/google-logo.svg" alt="">
-        </div>
-        <div class="col-6">
-          <img src="./project-assets/logos/microsoft-logo.svg" alt="">
-        </div>
-        <div class="col-6">
-          <img src="./project-assets/logos/fedex-logo.svg" alt="">
-        </div>
-      </div>
-     </div>
-     <!-- Comienza projects-section-img-->
-     <div class="container projects-section pb-5">
-      <div class="row">
-        <h1 class="text-center">Recent Projets</h1>
-        <div class="col-12 mx-3 pb-2 bg-white">
-          <img src="./project-assets/projects-section/1.jpg" alt="" class="img-fluid">
-          <h2>Simplify</h2>
-          <p>UI Design & App Development</p>
-          <a href="#">Learn more</a>
-          <div class="col-12 bg-white">
-            <img src="./project-assets/projects-section/2.jpg" alt="" class="img-fluid">
-            <h2>Dashcoin</h2>
-            <p>Web Development</p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="col-12 bg-white">
-            <img src="./project-assets/projects-section/3.jpg" alt="" class="img-fluid">
-            <h2>Vectorify</h2>
-            <p>User Experience Design</p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-     </div>
-
-          <!-- Comienza testimonials-section-->
-          <div class="container testimonials-section">
-            <div class="row">
-              <div class="col-12">
-                  <h1 class="pt-4">Hear What Our Clients Have to Say</h1>
-                  <p class="text-y">"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-                  <div>
-                  <div class="test-img">  
-                                      
-                  </div>
-                  <div class="test-text-img text-white">
-                    <p> <span> Kristin Watson </span> <br> Booking.com </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Comienza services-section-->
-
-          <div class="container services-section">
-            <div class="row">
-              <div class="col-12">
-                <h1>Our Services</h1>
-                <div class="services">
-                  <img src="./project-assets/services-section/icons/1.svg" alt="">
-                  <h3>User Interface Design</h3>
-                  <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                  <a href="#">Learn more</a>
-                </div>
-                <div class="services">
-                  <img src="./project-assets/services-section/icons/2.svg" alt="">
-                  <h3>User Experience Design</h3>
-                  <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                  <a href="#">Learn more</a>
-                </div>
-                <div class="services">
-                  <img src="./project-assets/services-section/icons/3.svg" alt="">
-                  <h3>Application Development</h3>
-                  <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                  <a href="#">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!-- Comienza newsletter-section-->
-
-            <div class="container newsletter-section text-center pb-5">
-              <div class="row">
-                <div class="col-12">
-                  <h3 class="pt-5">Do you have any questions?</h3>
-                  <p>let us help you!</p>
-                  <input class="py-3 mb-3" type="email" name="email" id="email" placeholder="Enter your email" required>  <br>
-                  <button type="submit" class="px-5 py-3">Suscribe</button>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <main>
-
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-  <script src="index.js"></script>
-</body>
-
+    <script src="../JS/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
